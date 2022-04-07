@@ -27,5 +27,5 @@ phases:
     commands:
       - echo "Deploying the infrastructure"
       - terraform -chdir=$FOLDER_SELECTOR apply -no-color -input=false -auto-approve plans/$FOLDER_SELECTOR.plan
-      - aws s3 sync $FOLDER_SELECTOR s3://as1506-static-website/ --exclude "*" --include "*.html"
+      - aws s3 sync $FOLDER_SELECTOR s3://as1506-static-website1/ --exclude "*" --include "*.html"
       - echo "Deployment is completed"
