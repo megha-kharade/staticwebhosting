@@ -10,7 +10,7 @@ phases:
       - echo "Removing cached terraform modules."
       - rm -Rf .terraform
       - echo "Initialiasing terraform"
-      - terraform -chdir=$FOLDER_SELECTOR init -no-color 
+      - terraform init -no-color 
       - echo "Validating terraform code."
       - terraform -chdir=$FOLDER_SELECTOR validate -no-color
 
