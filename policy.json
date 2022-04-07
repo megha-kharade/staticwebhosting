@@ -6,7 +6,7 @@
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::as1506-static-website/*"
+      "Resource": "arn:aws:s3:::as1506-static-website1/*"
     }
   ]
 }
