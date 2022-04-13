@@ -18,7 +18,7 @@ phases:
       - echo "Removing cached terraform modules."
       - rm -Rf .terraform
       - echo "Initialiasing terraform"
-      - terraform init
+      - terraform -chdir=$FOLDER_SELECTOR init
       - echo "Validating terraform code."
       - terraform -chdir=$FOLDER_SELECTOR validate
 
